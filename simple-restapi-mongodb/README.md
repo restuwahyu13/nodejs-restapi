@@ -42,13 +42,11 @@
 
         });
     });
-
 ```
 
 2.Berikut fungsi menambah satu data dengan mengunakan  `insertOne` dan jika menambahkan lebih dari satu data bisa mengunakan `insertMany` 
 
-```javascriot
-
+```javascript
   //tambah data (INSERT INTO peserta(name, age) VALUES(name, age) )
     app.post('/api', (req, res) => {
 
@@ -76,13 +74,11 @@
         });
 
     });
-
 ```
 
 3.Berikut fungsi menampilkan satu data berdasarkan id, mengunakan `find` atau juga bisa mengunakan `findOne`
 
 ```javascript
-
     //tampilkan data berdasarkan id (SELECT * FROM peserta WHERE id = id)
     app.get('/api/:id', (req, res) => {
 
@@ -120,13 +116,11 @@
 
         });
     });
-
 ```
 
 4.Berikut fungsi menghapus satu data berdasarkan id, mengunakan `deleteOne` atau juga bisa mengunakan `deleteMany` jika ingin menghapus lebih dari satu data
 
 ```javascript
-
     //hapus data berdasarkan id (DELETE FROM peserta WHERE id = id)
     app.delete('/api/:id', (req, res) => {
 
@@ -173,13 +167,11 @@
         });
 
     });
-
 ```
 
 5.Berikut fungsi memperbarui satu data berdasarkan id, mengunakan `updateOne` atau juga bisa mengunakan `updateMany` jika ingin memperbarui lebih dari satu data
 
 ```javascript
-
     //perbarui data berdasarkan id (UPDATE SET name=name, age=age WHERE id = id)
     app.put('/api/:id', (req, res) => {
 
@@ -231,5 +223,4 @@
         });
 
     });
-
 ```
